@@ -232,9 +232,16 @@ ul {
   align-self: center;
 }
 .favorite-book{
+  max-width: 300px;
   text-align: center;
   padding: 10px 20px;
   border: 1px solid white;
+  border-radius: 10px;
+}
+.favorite-book button {
+  padding: 3px 5px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 .favorite-book img{
   cursor: pointer;
