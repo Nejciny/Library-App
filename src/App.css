@@ -1,3 +1,5 @@
+/* comment */
+
 *,
 ::after,
 ::before {
@@ -205,13 +207,11 @@ ul {
   max-width:var(--max-width);
   margin:0 auto;
 
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+
 }
 .favorites-content .like-btn{
   color: white;
+
 }
 .favorites-container{
   display:flex;
@@ -231,13 +231,29 @@ ul {
 .favorites_title p{
   align-self: center;
 }
+
+.slick-initialized .slick-slide{
+
+}
+
+
 .favorite-book{
+  max-width: 300px;
   text-align: center;
   padding: 10px 20px;
   border: 1px solid white;
+  border-radius: 5px;
+
+  margin: auto;
+}
+.favorite-book button {
+  padding: 3px 5px;
 }
 .favorite-book img{
   cursor: pointer;
+display: unset !important;
+
+  height: 190px;
 }
 
 .favorite-book img:hover{
@@ -329,7 +345,7 @@ ul {
   transition:var(--transition);
 }
 .like-btn:hover{
-  color:var(--red-dark);
+  opacity: 0.8;
   transform:translateY(-2px)
 }
 
