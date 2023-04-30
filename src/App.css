@@ -176,13 +176,12 @@ ul {
   justify-content:center;
 }
 .search-container form{
-  max-width:var(--max-width);
   display:flex;
   gap:0.5rem;
   flex-wrap:wrap;
 }
 .search-container .form-input{
-  /* max-width:200px; */
+  max-width: 500px;
   padding:0.375rem 0.75rem;
   border-radius:var(--borderRadius);
   background:var(--backgroundColor);
@@ -238,11 +237,18 @@ ul {
 
 
 .favorite-book{
+
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  
   max-width: 300px;
   text-align: center;
   padding: 10px 20px;
   border: 1px solid white;
   border-radius: 5px;
+  background-color: white;
+  color: black;
 
   margin: auto;
 }
@@ -273,6 +279,11 @@ display: unset !important;
   cursor:pointer;
   font-size:20px;
   transition:var(--transition);
+
+  align-self: flex-end;
+  color: black;
+
+
 }
 .remove-btn:hover{
   color:var(--red-dark)

@@ -69,11 +69,13 @@ const Favorites = () => {
                         console.log(book)
 
                         return (
-                            <div className="favorite-book" >
-                                <img src={CheckProperty(book.volumeInfo, 'imageLinks')?book.volumeInfo.imageLinks.thumbnail:''} 
-                                onClick={()=>{selectBook(book.id)}} /> 
-                                <h5 >{CheckProperty(book.volumeInfo, 'title')?book.volumeInfo.title:'title'}</h5>
-                                <button id={book.id} className='remove-btn' onClick={ () => FavoriteBook(book.id) } > X </button>
+                            <div>
+                              <div className="favorite-book" >
+                                  <button id={book.id} className='remove-btn' onClick={ () => FavoriteBook(book.id) } > X </button>
+                                  <img src={CheckProperty(book.volumeInfo, 'imageLinks')?book.volumeInfo.imageLinks.thumbnail:''} 
+                                  onClick={()=>{selectBook(book.id)}} /> 
+                                  <h5 >{CheckProperty(book.volumeInfo, 'title')?book.volumeInfo.title:'title'}</h5>
+                              </div>
                             </div>
                         )
                     })}
